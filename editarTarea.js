@@ -10,7 +10,7 @@ export function editarTarea(tarea) {
     if (nuevaDescripcion)
         tarea['descripcion'] = nuevaDescripcion;
     let nuevoEstado = prompt("Nuevo estado (Pendiente, En curso, Terminada, Cancelada):");
-    while (nuevoEstado && ['pendiente', 'en curso', 'terminada', 'cancelada'].indexOf(nuevoEstado.trim().toLowerCase()) === -1) {
+    while (nuevoEstado && ['pendiente', 'en curso', 'terminada', 'cancelada']) {
         console.log("Ingrese uno de los estados válidos: Pendiente, En curso, Terminada, Cancelada.");
         nuevoEstado = prompt("Nuevo estado: ");
     }

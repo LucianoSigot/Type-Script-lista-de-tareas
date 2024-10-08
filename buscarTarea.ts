@@ -40,7 +40,7 @@ export function buscarTarea(aTareas: Tarea[]): void {
 
   // Búsqueda usando dos bucles
   for (let i = 0; i < aTareas.length; i++) {
-    let titulo = aTareas[i].titulo.toLowerCase();
+    let titulo = aTareas[i]['titulo'].toLowerCase();
 
     // Verificar si el término de búsqueda está contenido en el título
     for (let j = 0; j <= titulo.length - busqueda.length; j++) {

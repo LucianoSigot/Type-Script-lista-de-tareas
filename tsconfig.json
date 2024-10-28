@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "ESNext",  // Updated module setting
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
+      "target": "ES2020",                    
+      "module": "ESNext",                     
+      "strict": true,
+      "esModuleInterop": true,                 // Para interop con CommonJS
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "outDir": "./dist",                     // Directorio para los archivos compilados
+      "rootDir": "./",                        // Raíz del proyecto
+      "moduleResolution": "node",
+      "resolveJsonModule": true                // Para importar archivos JSON si es necesario
   },
-
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
 }

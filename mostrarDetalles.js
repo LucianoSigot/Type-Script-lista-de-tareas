@@ -1,9 +1,12 @@
-export function mostrarDetalles(tarea) {
-    console.log(`Título: ${tarea.titulo}`);
-    console.log(`Descripción: ${tarea.descripcion || 'Sin descripción'}`);
-    console.log(`Estado: ${tarea.estado}`);
-    console.log(`Fecha de Creación: ${tarea.fechaCreacion}`);
-    console.log(`Última Edición: ${tarea.fechaUltimaEdicion || 'No se ha editado'}`);
-    console.log(`Vencimiento: ${tarea.vencimiento || 'Sin vencimiento'}`);
-    console.log(`Dificultad: ${tarea.dificultad === 1 ? '⭐' : tarea.dificultad === 2 ? '⭐⭐' : '⭐⭐⭐'}`);
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = mostrarDetalles;
+function mostrarDetalles(arregloTarea) {
+    console.log("T\u00EDtulo: ".concat(arregloTarea['titulo']));
+    console.log("Descripci\u00F3n: ".concat(arregloTarea['descripcion']));
+    console.log("Estado: ".concat(arregloTarea['estado']));
+    console.log("Fecha de Creaci\u00F3n: ".concat(arregloTarea['fechaCreacion']));
+    console.log("\u00DAltima Edici\u00F3n: ".concat(arregloTarea['fechaUltimaEdicion']));
+    console.log("Vencimiento: ".concat(arregloTarea['fechaVencimiento']));
+    console.log("Dificultad: ".concat(arregloTarea['dificultad']));
 }
